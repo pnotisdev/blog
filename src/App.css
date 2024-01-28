@@ -14,11 +14,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-pre {
-  padding: 0;
-  margin: 0 0 50px 0;
-}
-
 ul {
   padding: 0;
 }
@@ -66,12 +61,6 @@ img {
   margin: auto;
 }
 
-#footer {
-  max-width: 900px;
-  margin: auto;
-  margin-top: 55px;
-}
-
 .header {
   height: 66px;
   width: 100%;
@@ -104,82 +93,11 @@ img {
   line-height: 28px;
 }
 
-.categories {
-  max-width: 300px;
-  right: 0;
-  margin: 40px 60px 0 0;
-  position: fixed;
-  background: #222;
-  text-align: right;
-  z-index: 0;
-}
-
-@media all and (max-width: 1000px) and (min-width: 20px) {
-  .categories {
-    visibility: hidden;
-  }
-}
-
-.footdogs {
-  margin: 0 5px
-}
-
-.tag {
-  color: #c8c8c8;
-}
-
-.important {
-  margin-left: -18px;
-}
-
-.title {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  color: #FFF;
-}
-
-.subtitle {
-  display: inline-block;
-  margin: 20px 0;
-  color: #FFF;
-}
-
-.subtitle2 {
-  display: inline-block;
-  color: #222;
-  background: #FFF;
-}
-
-.subtitle2:hover {
-  color: #222;
-  background: #FFF;
-}
-
-.code {
-  max-width: 900px;
-  background: #1f1f1f;
-  padding: 20px;
-  margin: 10px 0 30px 0;
-  display: inline-block;
-}
-
-.codesmall {
-  background: #1f1f1f;
-  display: inline-block;
-}
-
 .filter {
   display: block;
   margin-bottom: 30px;
   margin-top: -28px;
   text-align: right;
-}
-
-.description {
-  background: #1f1f1f;
-  padding: 10px 0 10px 10px;
-  margin-top: 0px;
 }
 
 @media only screen and (max-width: 900px) {
