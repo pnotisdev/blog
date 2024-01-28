@@ -10,13 +10,13 @@ const App = () => {
     <Router>
       <div id="page">
         <div id="content">
+          <Header />
           <Routes>
             <Route path="/" element={<BlogList />} />
             <Route path="/:tag" element={<BlogPost />} />
           </Routes>
         </div>
       </div>
-      <Footer />
     </Router>
   );
 };
