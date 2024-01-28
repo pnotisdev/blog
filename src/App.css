@@ -100,12 +100,53 @@ img {
   text-align: right;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   img {
     width: 100%;
   }
 
   body {
     font-size: 19px;
+  }
+
+  .logodiv {
+    display: flex;  /* Use flexbox */
+    align-items: center;  /* Align items vertically in the center */
+    padding: 0 10px;
+  }
+
+  .filter {
+    text-align: left;
+    margin-top: 0;
+    display: flex;  /* Use flexbox */
+    align-items: center;  /* Align items vertically in the center */
+    font-size: 13px;
+  }
+
+  .filter a {
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+    margin-right: 5px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .filter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+
+  .filter ul li {
+    margin: 5;
+  }
+
+  .filter.active ul {
+    display: block;
   }
 }
