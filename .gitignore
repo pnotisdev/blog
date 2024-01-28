@@ -12,6 +12,7 @@
 /build
 
 # misc
+/public/blogData.json
 .DS_Store
 .env.local
 .env.development.local
