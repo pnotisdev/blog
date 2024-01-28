@@ -1,20 +1,22 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const BlogList = () => {
-  const blogPosts = [
-    { id: 1, tag: "one", title: "TEST BLOG ONE" },
-    { id: 2, tag: "two", title: "TEST BLOG TWO" },
-    { id: 3, tag: "three", title: "TEST BLOG THREE" },
-  ];
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  useEffect(() => {
+    fetch('/blogData.json')
+      .then(response => response.json())
+      .then(data => setBlogPosts(data))
+      .catch(error => console.error('Error fetching blog data:', error));
+  }, []);
 
   return (
     <div id="list">
       <ul>
         {blogPosts.map(post => (
-          <li key={post.id}>
-            <Link to={`/${post.tag.toLowerCase()}`}>
+          <li key={post.tag}>
+            <Link to={`/${post.tag}`}>
               <span className="tag">[{post.tag}]</span>
               <span>{post.title}</span>
             </Link>
