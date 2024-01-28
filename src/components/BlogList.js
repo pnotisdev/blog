@@ -1,16 +1,20 @@
+
 import React from 'react';
+import BlogPost from './BlogPost';
 
 const BlogList = () => {
+  const blogPosts = [
+    { id: 1, tag: "1", title: "TEST BLOG ONE" },
+    { id: 2, tag: "2", title: "TEST BLOG TWO" },
+    { id: 3, tag: "3", title: "TEST BLOG THREE" },
+  ];
+
   return (
     <div id="list">
       <ul>
-        {/* todo */}
-        <li>
-          <a href="test1.html">
-            <span className="tag">[NO]</span><span>test1</span>
-          </a>
-        </li>
-        {/* todo */}
+        {blogPosts.map(post => (
+          <BlogPost key={post.id} tag={post.tag} title={post.title} />
+        ))}
       </ul>
     </div>
   );

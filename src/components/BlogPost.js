@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const BlogPost = () => {
+const BlogPost = ({ tag, title, content }) => {
   return (
-    <div>BlogPost</div>
-  )
-}
+    <li>
+      <a href={`/${tag.toLowerCase()}`}>
+        <span className="tag">[{tag}]</span>
+        <span>{title}</span>
+      </a>
+    </li>
+  );
+};
 
-export default BlogPost
+export default BlogPost;
