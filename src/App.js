@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import BlogList from './components/BlogList';
 import BlogPost from './components/BlogPost';
 
@@ -16,6 +17,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
+      <Footer />
     </Router>
   );
 };
