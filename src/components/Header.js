@@ -14,7 +14,7 @@ const Header = () => {
           <span className="footdogs"> / </span>
           <a href="#">CODE PROJECTS</a>
           <span className="footdogs"> / </span>
-          <a href="#">ABOUT ME</a>
+          <a href="about-me">ABOUT ME</a>
           <span className="footdogs"> / </span>
         </div>
       </div>
