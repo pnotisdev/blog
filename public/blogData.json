@@ -1,0 +1,7 @@
+
+[
+    { "id": 1, "tag": "one", "title": "TEST BLOG ONE", "content": "Welcome to blog one"},
+    { "id": 2, "tag": "two", "title": "TEST BLOG TWO", "content": "Welcome to blog two"},
+    { "id": 3, "tag": "three", "title": "TEST BLOG THREE", "content": "Welcome to blog three"}
+]
+  

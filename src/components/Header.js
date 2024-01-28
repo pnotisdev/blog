@@ -12,9 +12,9 @@ const Header = () => {
         <div className="filter">
           <a href="#">BLOG</a>
           <span className="footdogs"> / </span>
-          <a href="#">PHOTOGRAPHY</a>
+          <a href="#">CODE PROJECTS</a>
           <span className="footdogs"> / </span>
-          <a href="#">PROJECTS</a>
+          <a href="#">ABOUT ME</a>
           <span className="footdogs"> / </span>
         </div>
       </div>
