@@ -1,19 +1,24 @@
 
 import React from 'react';
-import BlogPost from './BlogPost';
+import { Link } from 'react-router-dom';
 
 const BlogList = () => {
   const blogPosts = [
-    { id: 1, tag: "1", title: "TEST BLOG ONE" },
-    { id: 2, tag: "2", title: "TEST BLOG TWO" },
-    { id: 3, tag: "3", title: "TEST BLOG THREE" },
+    { id: 1, tag: "one", title: "TEST BLOG ONE" },
+    { id: 2, tag: "two", title: "TEST BLOG TWO" },
+    { id: 3, tag: "three", title: "TEST BLOG THREE" },
   ];
 
   return (
     <div id="list">
       <ul>
         {blogPosts.map(post => (
-          <BlogPost key={post.id} tag={post.tag} title={post.title} />
+          <li key={post.id}>
+            <Link to={`/${post.tag.toLowerCase()}`}>
+              <span className="tag">[{post.tag}]</span>
+              <span>{post.title}</span>
+            </Link>
+          </li>
         ))}
       </ul>
     </div>

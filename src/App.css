@@ -118,21 +118,6 @@ img {
   .categories {
     visibility: hidden;
   }
-
-  .catbox {
-    visibility: hidden;
-  }
-}
-
-.catbox {
-  width: 300px;
-  height: 160px;
-  right: 0;
-  margin: 0;
-  position: absolute;
-  background: #222;
-  display: block;
-  z-index: 999;
 }
 
 .footdogs {
@@ -141,11 +126,6 @@ img {
 
 .tag {
   color: #c8c8c8;
-}
-
-.notification {
-  color: #222;
-  background: #fff;
 }
 
 .important {
@@ -157,13 +137,6 @@ img {
   margin-bottom: 20px;
   margin-top: 20px;
   color: #FFF;
-}
-
-.shoptitle {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  position: fixed;
 }
 
 .subtitle {
@@ -191,11 +164,6 @@ img {
   display: inline-block;
 }
 
-.shop {
-  max-width: 900px;
-  margin: -10px 0 40px 0;
-}
-
 .codesmall {
   background: #1f1f1f;
   display: inline-block;
@@ -212,16 +180,6 @@ img {
   background: #1f1f1f;
   padding: 10px 0 10px 10px;
   margin-top: 0px;
-}
-
-.videowrapper {
-  position: relative;
-  padding-bottom: 56.45%;
-  height: 0;
-}
-
-video {
-  max-width: 100%
 }
 
 @media only screen and (max-width: 900px) {
