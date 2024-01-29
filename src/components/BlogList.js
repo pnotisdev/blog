@@ -19,6 +19,7 @@ const BlogList = () => {
             <Link to={`/${post.tag}`}>
               <span className="tag">[{post.tag}]</span>
               <span>{post.title}</span>
+              <span className="creation-date">{post.creationDate}</span>
             </Link>
           </li>
         ))}

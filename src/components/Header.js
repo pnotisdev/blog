@@ -10,11 +10,11 @@ const Header = () => {
         </Link>
 
         <div className="filter">
-          <a href="#">BLOG</a>
+          <Link to="/">BLOG</Link>
           <span className="footdogs"> / </span>
-          <a href="#">CODE PROJECTS</a>
+          <Link to="/code-projects">CODE PROJECTS</Link>
           <span className="footdogs"> / </span>
-          <a href="about-me">ABOUT ME</a>
+          <Link to="/about-me">ABOUT ME</Link>
           <span className="footdogs"> / </span>
         </div>
       </div>

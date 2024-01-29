@@ -45,15 +45,20 @@ p {
 }
 
 img {
-  width: 900px;
-  max-width: 900px;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 20px;
 }
+
 
 #page {
   max-width: 900px;
   margin: auto;
   padding: 0 20px;
+}
+
+.creation-date {
+  padding-left: 30em;
 }
 
 #content {

@@ -19,6 +19,7 @@ const BlogPost = () => {
     <div>
       <h2>{blogPost.title}</h2>
       <p>{blogPost.content}</p>
+      <p>Created on: {blogPost.creationDate}</p>
     </div>
   );
 };
